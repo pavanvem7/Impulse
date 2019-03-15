@@ -39,7 +39,7 @@ const routes: Routes = [
         children: [
         {
           path: '',
-          loadchildren: '../profile/profile.module#ProfilePageModule'
+          loadChildren: '../profile/profile.module#ProfilePageModule'
         }
         ]
       },
