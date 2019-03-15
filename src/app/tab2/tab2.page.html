@@ -1,9 +1,38 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Application
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+<ion-card>
+  	<ion-card-header>
+    <ion-card-title>Doctor Name:</ion-card-title>
+    <ion-card-subtitle>(Profession)</ion-card-subtitle>
+ 	</ion-card-header>
+
+  <ion-card-content>
+    <ul>
+    	<li><h2>Hospital:</h2></li>
+    	<li><b>Date:</b></li>
+    	<li><b>Time:</b></li>
+    	<li><b>For:</b></li>
+    </ul>
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-content>
+    <ul>
+    	<li>Doctor Name:</li>
+    	<li>Treatment name:</li>
+    	<li>Progress:<ion-progress-bar>
+    		<ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+    	    </ion-progress-bar></li>
+    	<li>Next Appointment:</li>
+    	<li>Time:</li>
+    </ul>
+  </ion-card-content>
+</ion-card>
+</ion-content>
