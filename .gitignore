@@ -12,15 +12,7 @@ log.txt
 .vscode/
 npm-debug.log*
 
-.idea/
-.ionic/
-.sourcemaps/
-.sass-cache/
-.tmp/
-.versions/
-coverage/
-tmp/
-temp/
+
 $RECYCLE.BIN/
 
 .DS_Store
