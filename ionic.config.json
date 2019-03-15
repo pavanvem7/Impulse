@@ -1,5 +1,7 @@
 {
   "name": "Impulse",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
