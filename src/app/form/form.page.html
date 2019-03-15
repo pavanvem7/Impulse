@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+		<ion-icon size="large" name="clipboard" ></ion-icon>  </ion-toolbar>
+</ion-header>
+	<ion-content padding>
+	<ion-card class="formc">
+		<ion-card-title class="pd">Patient's details</ion-card-title>	
+	<ion-item>
+  <ion-label position="floating">Surname</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">First name</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Middle name</ion-label>
+  <ion-input></ion-input>
+</ion-item><br>
+<ion-item>
+  <ion-label>DOB-</ion-label>
+  <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+</ion-item>
+<ion-item>
+  		  <ion-item>
+	      <ion-label>Male</ion-label>
+    	  	<ion-radio name="gender" slot="end" value="Male"></ion-radio>
+		  </ion-item>
+		  <ion-item>
+      		<ion-label>Female</ion-label>
+      		<ion-radio name="gender" slot="end" value="Female"></ion-radio>
+    	  </ion-item> 
+		</ion-item>	
+		<ion-item>
+	  <ion-label position="floating">Address</ion-label>
+	  <ion-input></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label>Do you live alone?</ion-label>
+  		  <ion-item>
+	      <ion-label>Y</ion-label>
+    	  	<ion-radio slot="end" value="Y"></ion-radio>
+		  </ion-item>
+		  <ion-item>
+      		<ion-label>N</ion-label>
+      		<ion-radio slot="end" value="N"></ion-radio>
+    	  </ion-item> 
+	</ion-item>	
+	<ion-item>
+		<ion-label>Are you:</ion-label>
+	</ion-item>	
+  	<ion-item>
+  			<ion-item>
+	      <ion-label>Single</ion-label>
+    	  	<ion-radio slot="start" value="Single"></ion-radio>
+		  </ion-item>
+		  <ion-item>
+      		<ion-label>Married</ion-label>
+      		<ion-radio slot="start" value="N"></ion-radio>
+    	  </ion-item> 
+    </ion-item>
+    <ion-item>	  
+    	  <ion-item>
+      		<ion-label>Widow</ion-label>
+      		<ion-radio slot="start" value="N"></ion-radio>
+    	  </ion-item> 
+    	  <ion-item>
+      		<ion-label>Divorced</ion-label>
+      		<ion-radio slot="start" value="N"></ion-radio>
+    	  </ion-item> 
+	</ion-item>	
+</ion-card>
+<ion-card>
+	<b><ion-label class="sd">Spouse details</ion-label></b>
+	<ion-item>
+  		<ion-label position="floating">First name</ion-label>
+  		<ion-input></ion-input>
+	</ion-item>
+	<ion-item>
+  		<ion-label position="floating">Last name</ion-label>
+  		<ion-input></ion-input>
+	</ion-item><br>
+	<ion-item>
+  <ion-label>DOB-</ion-label>
+  <ion-datetime display-format="MMM DD, YYYY "></ion-datetime>
+</ion-item>
+</ion-card>	
+</ion-content>
