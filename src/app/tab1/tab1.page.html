@@ -5,12 +5,31 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-      <ion-list-header>
-        <ion-label>Book an Appointment...</ion-label>
-      </ion-list-header>
+     <ion-card>
+      <ion-card-content>
+        <ion-img class= "docimg" src="/assets/img/doctor.png"></ion-img>
+        <b><ion-card-title class="ict">
+          Book an appointment by doctor
+        </ion-card-title> </b>
+        <ion-button style="padding-right: 70px; padding-left: 70px; margin-top: 20px; margin-bottom: 20px;" expand="block">Book Now</ion-button>
+      </ion-card-content>  
+     </ion-card> 
 
-      <ion-button size="large" href="#">HOSPITAL</ion-button>
-      <ion-button size="large" href="#">CONDITION</ion-button> 
+     <ion-card>
+      <ion-card-content>
+        <ion-img class= "docimg" src="/assets/img/dermatology.png"></ion-img>
+        <b><ion-card-title class="ict">
+          Book an appointment by your disease
+        </ion-card-title> </b>
+        <ion-button style="padding-right: 70px; padding-left: 70px; margin-top: 20px; margin-bottom: 20px;" expand="block">Book Now</ion-button>
+      </ion-card-content>  
+     </ion-card> 
+
+     <ion-card>
+        <ion-card-title class="pm"><b>Previous Medications</b></ion-card-title>
+        <ion-card-content slot="end">0%</ion-card-content>
+        <ion-card-content >100%</ion-card-content>
+        <ion-progress-bar value="0.75"></ion-progress-bar>
+     </ion-card>
 </ion-content>
