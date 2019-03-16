@@ -23,4 +23,10 @@
    		    <ul><b>Blood pressure:</b></ul>
 		</ion-card>	
 	</ion-card-content>	
+
+	<form (ngSubmit)="logout()">
+		<ion-button type="submit" style="padding-right: 50px; padding-left: 50px; margin-left: 25%; margin-top: 20px; margin-bottom: 20px;" color=danger>
+			<ion-icon name="close"></ion-icon>LogOut</ion-button>
+	</form>
+	
 </ion-content>

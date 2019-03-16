@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { auth } from 'firebase';
 
 
 @Component({
@@ -15,11 +16,15 @@ export class LoginPage implements OnInit {
   user = {}
 
   constructor(public Afauth : AngularFireAuth, public toastController: ToastController, public router: Router ) {
-    if(this.Afauth.authState) {
-      this.presentonline();
+    this.Afauth.authState.subscribe(res => this.verify(res));
+  }
+
+  verify(res: any) {
+    if(res && res.uid) {
+      this.router.navigateByUrl('tabs/tabs/tab1');
     }
     else {
-      this.presentFail();
+      this.router.navigateByUrl('');
     }
   }
 
@@ -30,8 +35,10 @@ export class LoginPage implements OnInit {
   }
 
   success() {
-    this.router.navigateByUrl('/tabs/tab1');
+    this.router.navigateByUrl('tabs/tabs/tab1');
+    console.log('success');
   }
+
 
   async presentFail() {
     const toast = await this.toastController.create({
@@ -43,7 +50,7 @@ export class LoginPage implements OnInit {
 
   async presentonline() {
     const toast = await this.toastController.create({
-      message: 'Online',
+      message: 'online',
       duration: 2000
     });
     toast.present();
